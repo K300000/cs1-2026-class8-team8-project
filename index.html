@@ -7,6 +7,106 @@
     </head>
 
     <body>
-    
+    <h1 id="title">今回習ったHTML要素</h1>
+
+    <a href="#" id="top">Top</a>
+
+    <div id="container">
+      <div class="sidebar">
+        <ul>
+          <li><a href="#id1">文章の構造を記述する</a></li>
+          <li><a href="#id2">テキストを修飾する</a></li>
+          <li><a href="#id3">箇条書き</a></li>
+          <li><a href="#id4">リンク</a></li>
+          <li><a href="#id5">画像</a></li>
+          <li><a href="#id6">表</a></li>
+          <li><a href="#id7">フォーム</a></li>
+          <li><a href="#id8">その他</a></li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="important">
+          <p>以下は、body要素内でコンテンツを記述する際に用いる要素である。<br>
+          文書型宣言、html要素、head要素の記述を忘れないこと。</p>
+        </div>
+        <h2 id="id1">文章の構造を記述する</h2>
+        <h3>h1 ~ h6</h3>
+        <p>見出しであることを表す。<span class="alert">フレージングコンテンツ（独立したブロックを構成しない要素）内で用いないこと。</span></p>
+        <ul>
+          <li>h1が最も上位で、h6が最も下位</li>
+          <li>一般的にh1 ~ h6の順に小さくなる</li>
+        </ul>
+        <h3>p</h3>
+        <p>段落であることを表す。<span class="alert">フレージングコンテンツ内で用いないこと。</span></p>
+
+        <h2 id="id2">テキストを修飾する</h2>
+        <h3>b</h3>
+        <p>太文字で表す。</p>
+        <h3>i</h3>
+        <p>イタリック体で表す。</p>
+        <h3>strong</h3>
+        <p>強調する。ブラウザの表示上は太文字になる。</p>
+        <h3>em</h3>
+        <p>強調する。ブラウザの表示上はイタリック体になる。</p>
+
+        <h2 id="id3">箇条書き</h2>
+        <h3>ul</h3>
+        <p>li要素と組み合わせて順序のない箇条書きを表示する。<span class="alert">フレージングコンテンツ内で用いないこと。</span><span class="alert">子要素となるのは、li。</span></p>
+        <h3>ol</h3>
+        <p>li要素と組み合わせて順序のある箇条書きを表示する。<span class="alert">フレージングコンテンツ内で用いないこと。</span><span class="alert">子要素となるのは、li。</span></p>
+        <h3>li</h3>
+        <p>箇条書きの各項目を表示する。</p>
+
+        <h2 id="id4">リンク</h2>
+        <h3>a</h3>
+        <p>要素を他のWebページへのリンクとして表示する。</p>
+        <ul>
+          <li>href属性で、リンク先のページのURLを指定する。</li>
+        </ul>
+
+        <h2 id="id5">画像</h2>
+        <h3>img</h3>
+        <p>画像を表示する。<span class="alert">空要素であることに注意。</span></p>
+        <ul>
+          <li>src属性で表示対象の画像のURLを指定する。</li>
+        </ul>
+
+        <h2 id="id6">表</h2>
+        <h3>table</h3>
+        <p>tr, th, td要素と組み合わせて表を表示する。<span class="alert">フレージングコンテンツ内で用いないこと。</span><span class="alert">子要素となるのは、trなど。</span></p>
+        <h3>tr</h3>
+        <p>table要素の中で一行を表示する。<span class="alert">子要素となるのは、thおよびtd。</span></p>
+        <h3>th</h3>
+        <p>tr要素の中で、ヘッダとなるセルを表示する。</p>
+        <h3>td</h3>
+        <p>tr要素の中で、データとなるセルを表示する。</p>
+
+        <h2 id="id7">フォーム</h2>
+        <h3>form</h3>
+        <p>Webサーバに情報を送信するフォームを表示する。<span class="alert">フレージングコンテンツ内で用いないこと。</span></p>
+        <h3>button</h3>
+        <p>ボタンを表示する。</p>
+        <h3>input</h3>
+        <p>フォーム用のコントロールを表示する。</p>
+        <h3>textarea</h3>
+        <p>複数行のテキストエリアを表示する。</p>
+        <h3>select</h3>
+        <p>選択式のメニューを表示する。<span class="alert">子要素となるのは、option。</span></p>
+        <h3>option</h3>
+        <p>select要素の中で、個々の選択肢を表示する。</p>
+        <h3>label</h3>
+        <p>フォームのコントロールのラベルを表示する。</p>
+
+        <h2 id="id8">その他</h2>
+        <h3>hr</h3>
+        <p>段落間の区切りを表示する。<span class="alert">空要素であることに注意。</span><span class="alert">フレージングコンテンツ内で用いないこと。</span></p>
+        <h3>br</h3>
+        <p>段落内で改行を表示する。<span class="alert">空要素であることに注意。</span></p>
+      </div>
+    </div>
+    <div class="footer">
+      INIAD CS Essential 2018
+    </div>
     </body>
 </html>
