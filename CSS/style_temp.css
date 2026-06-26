@@ -1,0 +1,51 @@
+.slider{
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+}
+
+.prev,
+.next{
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+.prev{
+    left:10px;
+}
+
+.next{
+    right:10px;
+}
+
+.dots{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+    margin-top:15px;
+}
+
+.dot{
+
+    width:15px;
+
+    height:15px;
+
+    border-radius:50%;
+
+    background:#bbb;
+
+    cursor:pointer;
+}
