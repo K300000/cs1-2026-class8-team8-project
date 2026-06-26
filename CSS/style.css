@@ -168,3 +168,14 @@ span.alert {
   color: #ffffff;
   text-decoration: none;
 }
+
+
+.sidebar{
+  width: 30%;
+  margin:10px 0 10px 0;
+}
+
+.content{
+  width: 70%;
+  margin: 10px 0 10px 0;
+}
