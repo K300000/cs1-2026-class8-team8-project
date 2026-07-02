@@ -2,6 +2,17 @@
     position: relative;
     width: 400px;
     overflow: hidden;
+    margin-left: auto;
+}
+
+.slides{
+    display: flex;
+}
+
+.slide{
+    min-width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .prev,
@@ -30,11 +41,11 @@
 
     display:flex;
 
+    width: 400px;
+    margin: 5px 0 0 auto;
     justify-content:center;
 
     gap:10px;
-
-    margin-top:15px;
 }
 
 .dot{
@@ -48,4 +59,20 @@
     background:#bbb;
 
     cursor:pointer;
+}
+
+.dot.active{
+    background:#000;
+}
+
+img{
+    width: 400px;
+    height: 300px;
+}
+
+.slide img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 5px 0 5px auto;
 }
